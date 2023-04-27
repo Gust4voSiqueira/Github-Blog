@@ -17,9 +17,9 @@ export const CardProfileContainer = styled.div`
     padding: 20px;
 
     position: absolute;
-    top: translate(-50%, -50%);
+    top: translate(-30%, -30%);
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -35%);
   }
 `
 

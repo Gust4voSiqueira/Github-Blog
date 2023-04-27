@@ -27,7 +27,7 @@ export const CardPostContainer = styled.button`
   }
 
   @media (${(props) => props.theme.smartphone}) {
-    width: 80vw;
+    width: 100%;
     margin-bottom: 15px;
     padding: 22px;
   }
