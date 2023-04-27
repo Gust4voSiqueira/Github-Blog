@@ -30,6 +30,12 @@ export const ButtonsContainer = styled.header`
       cursor: pointer;
     }
   }
+
+  @media (${(props) => props.theme.smartphone}) {
+    .redirect {
+      font-size: 0.9rem;
+    }
+  }
 `
 
 export const LinksPost = styled.nav`
@@ -65,6 +71,7 @@ export const LinksPost = styled.nav`
       flex-direction: column;
 
       span {
+        font-size: 0.85rem;
         margin-top: 5px;
       }
     }

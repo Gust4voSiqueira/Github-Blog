@@ -29,7 +29,14 @@ export const CardPostContainer = styled.button`
   @media (${(props) => props.theme.smartphone}) {
     width: 100%;
     margin-bottom: 15px;
-    padding: 22px;
+    padding: 15px;
+
+    .previewContent {
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      overflow: hidden;
+      -webkit-box-orient: vertical;
+    }
   }
 `
 
@@ -53,6 +60,7 @@ export const HeaderCardPost = styled.header`
 
   time {
     margin: 8px 0 auto;
+    text-align: end;
 
     width: 30%;
     color: ${(props) => props.theme['gray-400']};

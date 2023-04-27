@@ -44,7 +44,9 @@ export const ArticleContentContainer = styled.section`
   }
 
   @media (${(props) => props.theme.smartphone}) {
-    padding: 2.5rem 0;
+    margin-top: 100px;
+    padding: 0;
+
     code {
       font-size: 0.8rem;
     }
