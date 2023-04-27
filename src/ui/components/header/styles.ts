@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const HeaderContainer = styled.header`
-position: relative;
+  position: relative;
   width: 100%;
   max-height: 296px;
 

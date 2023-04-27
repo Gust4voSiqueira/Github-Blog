@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
   * {
@@ -6,10 +6,18 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     border: 0;
     box-sizing: border-box;
-    font-family: 'Nunito', sans-serif;
   }
   :focus {
     outline: 0;
     box-shadow: 0 0 0 0;
+  }
+
+  body {
+    background-color: ${(props) => props.theme['black-700']};
+    font-family: 'Nunito', sans-serif;
+  }
+
+  code {
+    font-family: 'Fira Code', sans-serif;
   }
 `

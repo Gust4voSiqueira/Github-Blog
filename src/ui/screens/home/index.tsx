@@ -1,46 +1,47 @@
-import { useEffect, useState } from "react";
-import { CardPost } from "../../components/cardPost";
-import { CardProfile } from "../../components/cardProfile";
-import { Header } from "../../components/header";
-import { SeachForm } from "./components/searchPost";
-import { HomeContainer, HomeContent, PostsContainer } from "./styles";
-import { api } from "../../../lib/axios";
+import { useEffect, useState } from 'react'
+import { HomeContainer, PostsContainer } from './styles'
+import { CardPost, CardProfile, SearchPost } from './components'
+import { getPosts } from '../../../service/getPosts'
+
+export interface IPost {
+  number: number
+  title: string
+  updated_at: Date
+  body: string
+}
 
 export function Home() {
-  const [posts, setPosts] = useState([])
+  const [posts, setPosts] = useState<IPost[]>([])
 
-  async function loadPosts() {
-    const response = await api.get("search/issues?q=javascript%20repo:Gust4voSiqueira/Github-Blog")
-    const { data } = response
-
-    console.log(data);
-    
+  async function getPost() {
+    const response = (await getPosts()) as any
+    setPosts(response)
   }
 
-  //https://api.github.com/search/issues?q=javascript%20repo:Gust4voSiqueira/Github-Blog
-  //https://api.github.com/search/issues?q=Boas%20pr%C3%A1ticas%20repo:rocketseat-education/reactjs-github-blog-challenge
-
   useEffect(() => {
-    loadPosts()
+    getPost()
   }, [])
 
   return (
     <>
-      <Header />
       <CardProfile />
       <HomeContainer>
-        <HomeContent>
-          <SeachForm />
+        <SearchPost totalPosts={posts.length} onFilterPosts={getPosts} />
 
-          <PostsContainer>
-            <CardPost />
-            <CardPost />
-            <CardPost />
-            <CardPost />
-            <CardPost />
-          </PostsContainer>
-          
-        </HomeContent>
+        <PostsContainer>
+          {posts.length > 0 &&
+            posts.map((post) => {
+              return (
+                <CardPost
+                  key={post.number}
+                  id={post.number}
+                  title={post.title}
+                  content={post.body}
+                  updatedAt={post.updated_at}
+                />
+              )
+            })}
+        </PostsContainer>
       </HomeContainer>
     </>
   )

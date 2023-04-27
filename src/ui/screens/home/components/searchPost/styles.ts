@@ -1,8 +1,7 @@
-import styled from "styled-components";
-
+import styled from 'styled-components'
 
 export const SearchFormContainer = styled.form`
-  color: ${props => props.theme.white};
+  color: ${(props) => props.theme.white};
 
   input {
     width: 100%;
@@ -11,12 +10,12 @@ export const SearchFormContainer = styled.form`
     margin-top: 17px;
     font-size: 1rem;
 
-    color: ${props => props.theme['white']};
-    background-color: ${props => props.theme['black-500']};
-    border: 1px solid ${props => props.theme['gray-500']};
+    color: ${(props) => props.theme.white};
+    background-color: ${(props) => props.theme['black-500']};
+    border: 1px solid ${(props) => props.theme['gray-500']};
 
     ::placeholder {
-      color: ${props => props.theme['gray-500']};
+      color: ${(props) => props.theme['gray-500']};
       font-size: 1rem;
     }
   }
@@ -27,12 +26,12 @@ export const HeaderSearchForm = styled.header`
   justify-content: space-between;
 
   span {
-    color: ${props => props.theme['gray-200']};
+    color: ${(props) => props.theme['gray-200']};
     font-size: 1.125rem;
   }
 
   p {
-    color: ${props => props.theme['gray-400']};
+    color: ${(props) => props.theme['gray-400']};
     font-size: 0.875rem;
   }
-`  
+`

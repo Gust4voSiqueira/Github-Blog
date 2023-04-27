@@ -1,20 +1,8 @@
-import styled from "styled-components";
-
+import styled from 'styled-components'
 
 export const CardProfileContainer = styled.div`
   display: flex;
   justify-content: space-between;
-
-  background-color: ${props => props.theme['blue-900']};
-  color: ${props => props.theme['white']};
-  padding: 32px;
-
-  position: absolute;
-  top: 31%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 864px;
-  border-radius: 10px;
 
   img {
     width: 148px;
@@ -34,13 +22,12 @@ export const HeaderCardProfile = styled.header`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-width: 60px;
+    min-width: 70px;
     font-size: 0.8rem;
     font-weight: bold;
     text-decoration: none;
-    color: ${props => props.theme['blue-200']};
-    }
-  
+    color: ${(props) => props.theme['blue-200']};
+  }
 `
 
 export const CardProfileContent = styled.section`
@@ -50,7 +37,7 @@ export const CardProfileContent = styled.section`
     margin: 22px 0;
     line-height: 1.6rem;
     font-size: 1rem;
-    color: ${props => props.theme['blue-100']};
+    color: ${(props) => props.theme['blue-100']};
   }
 `
 
@@ -66,7 +53,7 @@ export const FooterCardProfile = styled.footer`
       justify-content: space-between;
       align-items: center;
 
-      color: ${props => props.theme['gray-200']};
+      color: ${(props) => props.theme['gray-200']};
       font-size: 16px;
       list-style: none;
 
