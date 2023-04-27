@@ -19,7 +19,7 @@ export const CardProfileContainer = styled.div`
     position: absolute;
     top: translate(-30%, -30%);
     left: 50%;
-    transform: translate(-50%, -35%);
+    transform: translate(-50%, -20%);
   }
 `
 

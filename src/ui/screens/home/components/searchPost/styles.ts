@@ -21,7 +21,7 @@ export const SearchFormContainer = styled.form`
   }
 
   @media (${(props) => props.theme.smartphone}) {
-    margin-top: 150px;
+    margin-top: 200px;
   }
 `
 
