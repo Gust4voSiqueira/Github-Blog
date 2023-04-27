@@ -14,5 +14,9 @@ export const defaultTheme = {
 
   'black-500': '#040F1A',
   'black-700': '#071422',
+
+  desktop: 'min-width: 1024px',
+  tablet: 'min-width: 767px and max-width: tablet',
+  smartphone: 'max-width: 767px',
   white: '#FFF',
 } as const

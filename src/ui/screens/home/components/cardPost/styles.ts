@@ -25,6 +25,12 @@ export const CardPostContainer = styled.button`
     overflow: hidden;
     -webkit-box-orient: vertical;
   }
+
+  @media (${(props) => props.theme.smartphone}) {
+    width: 80vw;
+    margin-bottom: 15px;
+    padding: 22px;
+  }
 `
 
 export const HeaderCardPost = styled.header`

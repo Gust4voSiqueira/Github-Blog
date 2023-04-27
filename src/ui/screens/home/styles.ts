@@ -11,4 +11,8 @@ export const PostsContainer = styled.section`
   flex-wrap: wrap;
 
   margin-top: 48px;
+
+  @media (${(props) => props.theme.smartphone}) {
+    margin-top: 30px;
+  }
 `

@@ -11,6 +11,16 @@ export const CardProfileContainer = styled.div`
   transform: translate(-50%, -50%);
   width: 54rem;
   border-radius: 10px;
+
+  @media (${(props) => props.theme.smartphone}) {
+    width: 90vw;
+    padding: 20px;
+
+    position: absolute;
+    top: translate(-50%, -50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 `
 
 export const LoaderContainer = styled.div`

@@ -19,6 +19,10 @@ export const SearchFormContainer = styled.form`
       font-size: 1rem;
     }
   }
+
+  @media (${(props) => props.theme.smartphone}) {
+    margin-top: 100px;
+  }
 `
 
 export const HeaderSearchForm = styled.header`

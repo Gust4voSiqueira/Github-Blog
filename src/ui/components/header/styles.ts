@@ -19,4 +19,19 @@ export const HeaderContainer = styled.header`
     top: 50px;
     position: absolute;
   }
+
+  @media (${(props) => props.theme.smartphone}) {
+    width: 100vw;
+    height: 30vh;
+
+    img {
+      height: 100%;
+    }
+
+    .logo {
+      width: 120px;
+      top: -20%;
+      position: absolute;
+    }
+  }
 `

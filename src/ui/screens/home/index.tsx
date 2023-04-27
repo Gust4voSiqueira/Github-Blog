@@ -13,8 +13,9 @@ export interface IPost {
 export function Home() {
   const [posts, setPosts] = useState<IPost[]>([])
 
-  async function getPost() {
-    const response = (await getPosts()) as any
+  async function getPost(fieldContent = '') {
+    const response = (await getPosts(fieldContent)) as any
+
     setPosts(response)
   }
 
@@ -26,7 +27,7 @@ export function Home() {
     <>
       <CardProfile />
       <HomeContainer>
-        <SearchPost totalPosts={posts.length} onFilterPosts={getPosts} />
+        <SearchPost totalPosts={posts.length} onFilterPosts={getPost} />
 
         <PostsContainer>
           {posts.length > 0 &&

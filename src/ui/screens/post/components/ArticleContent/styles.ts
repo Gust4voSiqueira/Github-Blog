@@ -42,4 +42,11 @@ export const ArticleContentContainer = styled.section`
   ul {
     margin-left: 1.25rem;
   }
+
+  @media (${(props) => props.theme.smartphone}) {
+    padding: 2.5rem 0;
+    code {
+      font-size: 0.8rem;
+    }
+  }
 `

@@ -8,6 +8,17 @@ export const CardProfileContainer = styled.div`
     width: 148px;
     border-radius: 8px;
   }
+
+  @media (${(props) => props.theme.smartphone}) {
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      width: 80px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+  }
 `
 
 export const HeaderCardProfile = styled.header`
@@ -28,6 +39,20 @@ export const HeaderCardProfile = styled.header`
     text-decoration: none;
     color: ${(props) => props.theme['blue-200']};
   }
+
+  @media (${(props) => props.theme.smartphone}) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    h4 {
+      font-size: 1.3rem;
+    }
+
+    a {
+      font-size: 0.75rem;
+    }
+  }
 `
 
 export const CardProfileContent = styled.section`
@@ -38,6 +63,15 @@ export const CardProfileContent = styled.section`
     line-height: 1.6rem;
     font-size: 1rem;
     color: ${(props) => props.theme['blue-100']};
+  }
+
+  @media (${(props) => props.theme.smartphone}) {
+    margin-left: 0;
+
+    p {
+      text-align: center;
+      margin: 5px 0;
+    }
   }
 `
 
@@ -62,6 +96,26 @@ export const FooterCardProfile = styled.footer`
         height: 20px;
 
         margin-right: 5px;
+      }
+    }
+  }
+
+  @media (${(props) => props.theme.smartphone}) {
+    width: 100%;
+    margin-top: 10px;
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+
+      li {
+        flex-direction: column;
+        text-align: center;
+        font-size: 0.7rem;
+
+        img {
+          width: 25px;
+        }
       }
     }
   }

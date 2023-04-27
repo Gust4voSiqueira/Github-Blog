@@ -4,6 +4,12 @@ export const CardInfoPostContainer = styled.header`
   h1 {
     margin: 30px 0 20px;
   }
+
+  @media (${(props) => props.theme.smartphone}) {
+    h1 {
+      text-align: center;
+    }
+  }
 `
 
 export const ButtonsContainer = styled.header`
@@ -49,6 +55,18 @@ export const LinksPost = styled.nav`
     span {
       margin-left: 8px;
       color: ${(props) => props.theme['gray-400']};
+    }
+  }
+
+  @media (${(props) => props.theme.smartphone}) {
+    width: 100%;
+
+    li {
+      flex-direction: column;
+
+      span {
+        margin-top: 5px;
+      }
     }
   }
 `
