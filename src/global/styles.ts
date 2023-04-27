@@ -17,6 +17,7 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Nunito', sans-serif;
     
     overflow: hidden;
+    height: 100%;
   }
 
   code {
