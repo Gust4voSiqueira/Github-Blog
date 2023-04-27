@@ -12,9 +12,11 @@ export const GlobalStyle = createGlobalStyle`
     box-shadow: 0 0 0 0;
   }
 
-  body {
+  html, body {
     background-color: ${(props) => props.theme['black-700']};
     font-family: 'Nunito', sans-serif;
+    
+    overflow: hidden;
   }
 
   code {
