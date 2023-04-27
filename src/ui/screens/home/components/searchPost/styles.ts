@@ -23,6 +23,10 @@ export const SearchFormContainer = styled.form`
   @media (${(props) => props.theme.smartphone}) {
     margin-top: 200px;
   }
+
+  @media (${(props) => props.theme.tablet}) {
+    margin-top: 50px;
+  }
 `
 
 export const HeaderSearchForm = styled.header`

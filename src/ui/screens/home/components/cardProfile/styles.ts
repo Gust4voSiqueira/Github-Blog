@@ -19,6 +19,14 @@ export const CardProfileContainer = styled.div`
       margin-bottom: 10px;
     }
   }
+
+  @media (${(props) => props.theme.tablet}) {
+    img {
+      width: 150px;
+      height: 150px;
+      margin: auto;
+    }
+  }
 `
 
 export const HeaderCardProfile = styled.header`
@@ -118,5 +126,10 @@ export const FooterCardProfile = styled.footer`
         }
       }
     }
+  }
+
+  @media (${(props) => props.theme.tablet}) {
+    width: 100%;
+    margin-top: 10px;
   }
 `

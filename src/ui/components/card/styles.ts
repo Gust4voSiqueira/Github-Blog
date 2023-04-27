@@ -16,10 +16,12 @@ export const CardProfileContainer = styled.div`
     width: 90vw;
     padding: 20px;
 
-    position: absolute;
     top: translate(-30%, -30%);
-    left: 50%;
     transform: translate(-50%, -20%);
+  }
+
+  @media (${(props) => props.theme.tablet}) {
+    width: 90vw;
   }
 `
 

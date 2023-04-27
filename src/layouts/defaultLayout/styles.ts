@@ -9,4 +9,8 @@ export const LayoutContainer = styled.div`
   @media (${(props) => props.theme.smartphone}) {
     max-width: 90vw;
   }
+
+  @media (${(props) => props.theme.tablet}) {
+    max-width: 90vw;
+  }
 `

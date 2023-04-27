@@ -38,6 +38,19 @@ export const CardPostContainer = styled.button`
       -webkit-box-orient: vertical;
     }
   }
+
+  @media (${(props) => props.theme.tablet}) {
+    width: 49%;
+    margin-bottom: 15px;
+    padding: 15px;
+
+    .previewContent {
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      overflow: hidden;
+      -webkit-box-orient: vertical;
+    }
+  }
 `
 
 export const HeaderCardPost = styled.header`

@@ -34,4 +34,18 @@ export const HeaderContainer = styled.header`
       position: absolute;
     }
   }
+
+  @media (${(props) => props.theme.tablet}) {
+    height: 30vh;
+
+    img {
+      height: 100%;
+    }
+
+    .logo {
+      width: 120px;
+      top: -20%;
+      position: absolute;
+    }
+  }
 `
