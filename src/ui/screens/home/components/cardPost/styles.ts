@@ -20,10 +20,10 @@ export const CardPostContainer = styled.button`
     line-height: 160%;
     text-align: left;
 
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
+    white-space: normal;
     overflow: hidden;
-    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    max-height: 100%;
   }
 
   @media (${(props) => props.theme.smartphone}) {
@@ -32,10 +32,10 @@ export const CardPostContainer = styled.button`
     padding: 15px;
 
     .previewContent {
-      display: -webkit-box;
-      -webkit-line-clamp: 4;
+      white-space: normal;
       overflow: hidden;
-      -webkit-box-orient: vertical;
+      text-overflow: ellipsis;
+      max-height: 120px;
     }
   }
 
@@ -45,10 +45,10 @@ export const CardPostContainer = styled.button`
     padding: 15px;
 
     .previewContent {
-      display: -webkit-box;
-      -webkit-line-clamp: 4;
+      white-space: normal;
       overflow: hidden;
-      -webkit-box-orient: vertical;
+      text-overflow: ellipsis;
+      max-height: 120px;
     }
   }
 `
@@ -65,10 +65,10 @@ export const HeaderCardPost = styled.header`
     width: 80%;
     text-align: left;
 
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
+    white-space: normal;
     overflow: hidden;
-    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    max-height: 100px;
   }
 
   time {

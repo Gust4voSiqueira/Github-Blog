@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 export const ArticleContentContainer = styled.section`
-  overflow: hidden;
   padding: 2.5rem 2rem;
 
   white-space: pre-wrap;

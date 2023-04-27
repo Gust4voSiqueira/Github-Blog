@@ -17,13 +17,6 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Nunito', sans-serif;
   }
 
-  body.lock-position {
-    height: 100%;
-    overflow: hidden;
-    width: 100%;
-    position: fixed;
-  }
-
   code {
     font-family: 'Fira Code', sans-serif;
   }
