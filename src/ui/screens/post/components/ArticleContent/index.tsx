@@ -38,9 +38,11 @@ export function ArticleContent({ children }: IArticleContent) {
               </SyntaxHighlighter>
             ) : (
               <pre style={styleTagPre}>
-                <code {...props} className={className}>
-                  {children}
-                </code>
+                <div>
+                  <code {...props} className={className}>
+                    {children}
+                  </code>
+                </div>
               </pre>
             )
           },
