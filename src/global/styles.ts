@@ -15,9 +15,13 @@ export const GlobalStyle = createGlobalStyle`
   html, body {
     background-color: ${(props) => props.theme['black-700']};
     font-family: 'Nunito', sans-serif;
-    
-    overflow: hidden;
+  }
+
+  body.lock-position {
     height: 100%;
+    overflow: hidden;
+    width: 100%;
+    position: fixed;
   }
 
   code {
